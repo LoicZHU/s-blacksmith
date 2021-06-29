@@ -1,0 +1,19 @@
+@import "src/index";
+
+.artist {
+  display: flex;
+  min-height: 100%;
+  background-color: $light-black;
+
+  &__menu {
+    flex: $flex-menu;
+  }
+  &__album {
+    flex: auto;
+    margin: 20px;
+
+    h2 {
+      color: $white;
+    }
+  }
+}

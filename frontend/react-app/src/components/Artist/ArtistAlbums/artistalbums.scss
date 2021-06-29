@@ -1,0 +1,50 @@
+@import "src/index";
+
+.artist-albums {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+
+  &__none {
+    color: $white;
+  }
+
+  &__card {
+    background-color: $medium-black;
+    margin: 20px;
+    width: 20%;
+
+    &:hover {
+      background-color: #595959;
+    }
+
+    &__link {
+      display: block;
+
+      img {
+        width: 100%;
+      }
+
+      &__album {
+        color: $white;
+        font-weight: bold;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    }
+
+    &__artist {
+      padding-bottom: 20px;
+
+      a {
+        color: $grey;
+      }
+    }
+
+    &__artist > a:hover {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@import "src/index";
+
+.album {
+  display: flex;
+  min-height: 100%;
+  background-color: $light-black;
+
+  &__menu {
+    flex: $flex-menu
+  }
+
+  &__body {
+    flex: auto;
+
+    &__infos {
+      display: flex;
+      align-items: flex-end;
+      color: $white;
+      margin-bottom: 40px;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 1));
+      background-color: rgb(91, 87, 115);
+      padding: 35px;
+
+      & > img {
+        width: 20vw;
+        box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      &__description {
+        margin-left: 1rem;
+
+        &__text {
+          span:first-of-type {
+            font-weight: bold;
+          }
+
+          span:not(:first-of-type) {
+            color: $grey;
+            margin-left: 0.25rem;
+          }
+
+          span:not(:first-of-type)::before {
+            content: "• ";
+          }
+        }
+      }
+    }
+  }
+
+  &__titles {
+    padding: 35px 35px $player-size;
+
+    & > h3 {
+      color: $grey;
+      font-weight: normal;
+    }
+
+    &__album-track {
+      &--selected {
+        color: $white;
+        background-color: $medium-grey;
+      }
+
+      &--playing {
+        color: red;
+      }
+    }
+
+    &__rights {
+      margin: 10px 0 20px;
+
+      small {
+        display: block;
+        color: $grey;
+      }
+    }
+  }
+
+  &__player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

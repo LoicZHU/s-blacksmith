@@ -1,0 +1,24 @@
+@import "../../index";
+
+.login {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: $black;
+
+  h1 {
+    color: $white;
+  }
+
+  a {
+    color: $white;
+    font-weight: bold;
+    background-color: $green-1;
+    padding: 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+  & > a:hover {
+    background-color: $green-2;
+  }
+}

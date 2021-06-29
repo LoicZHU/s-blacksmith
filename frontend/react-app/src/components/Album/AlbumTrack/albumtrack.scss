@@ -1,0 +1,71 @@
+@import "src/index";
+
+.album-track {
+  display: flex;
+  padding: 10px 0;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+
+  &:hover {
+    background-color: $dark-grey;
+  }
+  &:hover .album-track__number > div {
+    display: none;
+  }
+  &:hover .album-track__number::after {
+    color: $white;
+    text-align: center;
+    content: "⏯";
+  }
+
+  &__number,
+  &__infos div > a,
+  &__duration {
+    color: $grey
+  }
+
+  &__number {
+    text-align: center;
+    align-self: center;
+    width: 2rem;
+    margin: 5px;
+
+    & > div {
+      text-align: center;
+    }
+  }
+
+  &__infos {
+    cite {
+      display: block;
+      color: $white;
+      font-style: normal;
+    }
+
+    &__track--playing {
+      color: greenyellow !important;
+    }
+
+    div > a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__duration {
+    align-self: center;
+    text-align: center;
+    width: 10%;
+    margin-left: auto;
+  }
+}
+
+.play:hover span {
+  display: none;
+}
+
+.play:hover::before {
+  display: inline;
+  content: "Jouer";
+}

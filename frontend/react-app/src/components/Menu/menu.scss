@@ -1,0 +1,44 @@
+@import "src/index";
+
+.sidebar {
+  background-color: $black;
+  height: 100%;
+
+  &__header {
+    padding: 1rem;
+
+    h1 {
+      color: $white;
+      margin-top: 0;
+
+      a {
+        color: $white;
+        padding: 0.5rem;
+      }
+    }
+  }
+
+  &__menu > nav {
+    ul {
+      padding: 0;
+
+      li {
+        margin: 1.2rem 0 0 ;
+
+        a {
+          color: $grey;
+          font-weight: bold;
+          display: block;
+          padding: 0.5rem;
+          margin: 0 0.75rem;
+        }
+        a:hover {
+          color: $white;
+        }
+        .selected {
+          color: $white;
+        }
+      }
+    }
+  }
+}
