@@ -83,3 +83,9 @@
     right: 0;
   }
 }
+
+@media (max-width: 539px) {
+  .album {
+    display: block;
+  }
+}

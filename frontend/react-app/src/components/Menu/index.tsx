@@ -18,7 +18,7 @@ function Menu() {
     <div className={'sidebar'}>
       <header className={'sidebar__header'}>
         <h1>
-          <NavLink to={'/'}>Accueil</NavLink>
+          <NavLink to={'/'}>App</NavLink>
         </h1>
       </header>
 

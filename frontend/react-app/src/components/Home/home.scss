@@ -19,3 +19,13 @@
     }
   }
 }
+
+@media (max-width: 539px) {
+  .home {
+    display: block;
+
+    &__body {
+      min-height: 100%;
+    }
+  }
+}

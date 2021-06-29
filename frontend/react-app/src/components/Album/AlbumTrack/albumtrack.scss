@@ -60,12 +60,3 @@
     margin-left: auto;
   }
 }
-
-.play:hover span {
-  display: none;
-}
-
-.play:hover::before {
-  display: inline;
-  content: "Jouer";
-}

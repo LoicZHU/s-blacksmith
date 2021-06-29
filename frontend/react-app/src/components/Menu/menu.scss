@@ -42,3 +42,24 @@
     }
   }
 }
+
+@media (max-width: 539px) {
+  .sidebar {
+    &__header > h1 {
+      //font-size: 26px;
+      margin-bottom: 0;
+
+      a {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &__menu > nav ul,
+    &__menu > nav ul li {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+    }
+  }
+}

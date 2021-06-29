@@ -48,3 +48,13 @@
     }
   }
 }
+
+@media (max-width: 539px) {
+  .my-albums {
+    justify-content: center;
+
+    &__card {
+      width: 35vw;
+    }
+  }
+}
