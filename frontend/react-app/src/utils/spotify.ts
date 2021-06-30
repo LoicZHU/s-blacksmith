@@ -1,5 +1,5 @@
 const AUTH_ENDPOINT: string = 'https://accounts.spotify.com/authorize';
-const REDIRECT_URI: string = 'http://localhost:3000/';
+const REDIRECT_URI: string = process.env.REACT_APP_REDIRECT_URI || '';
 const CLIENT_ID: string = process.env.REACT_APP_CLIENT_ID || '';
 const SCOPES: string[] = [
   'ugc-image-upload',
