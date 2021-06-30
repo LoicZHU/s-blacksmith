@@ -26,9 +26,11 @@
         width: 100%;
       }
 
-      &__album {
+      &__album > h3 {
         color: $white;
         font-weight: bold;
+        font-size: 16px;
+        margin: 0;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;

@@ -17,10 +17,12 @@ function Artist() {
           <div className={'artist__menu'}>
             <Menu />
           </div>
-          <div className={'artist__album'}>
-            <h2>Albums</h2>
-            <ArtistAlbums />
-          </div>
+          <main className={'artist__album'}>
+            <section>
+              <h2>Albums</h2>
+              <ArtistAlbums />
+            </section>
+          </main>
         </div>
       )}
     </>

@@ -18,8 +18,10 @@ function MySpace() {
             <Menu />
           </div>
           <div className={'myspace__myalbums'}>
-            <h2>Mes albums préférés</h2>
-            <MyAlbums />
+            <section>
+              <h2>Mes albums préférés</h2>
+              <MyAlbums />
+            </section>
           </div>
         </div>
       )}

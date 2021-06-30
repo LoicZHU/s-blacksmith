@@ -36,7 +36,9 @@ function ArtistAlbums() {
                 <div>
                   <img src={album.images[1].url} alt="" />
                 </div>
-                <div className={'artist-albums__card__link__album'}>{album.name}</div>
+                <div className={'artist-albums__card__link__album'}>
+                  <h3>{album.name}</h3>
+                </div>
               </Link>
               <div className={'artist-albums__card__artist'}>
                 {album.artists.length <= 1 ? (

@@ -32,8 +32,8 @@ function AlbumTrack(props: IProps) {
       <div className={'album-track__number'} onClick={handleClick}>
         <div>{props.index + 1}</div>
       </div>
-      <div className={`album-track__infos ${props.isPlaying ? 'album-track__infos--playing' : ''}`}>
-        <div className={`album-track__infos__track ${props.isPlaying ? 'album-track__infos__track--playing' : ''}`}>
+      <div className={'album-track__infos'}>
+        <div className={'album-track__infos__track'}>
           <cite>{props.item.name}</cite>
         </div>
         <div>

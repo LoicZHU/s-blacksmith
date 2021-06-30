@@ -33,14 +33,14 @@ function Home() {
       <div className={'home__menu'}>
         <Menu />
       </div>
-      <div className={'home__body'}>
+      <main className={'home__body'}>
         <p>
           <span role={'img'} aria-label={'smile with sunglasses'}>
             😎
           </span>{' '}
           Cette application permet d'utiliser quelques fonctionnalités offertes par Spotify.
         </p>
-      </div>
+      </main>
     </div>
   );
 }

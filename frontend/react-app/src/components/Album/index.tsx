@@ -67,7 +67,7 @@ function Album() {
           <div className={'album__menu'}>
             <Menu />
           </div>
-          <div className={'album__body'}>
+          <main className={'album__body'}>
             {!isLoading && album && (
               <div className={'album__body__infos'}>
                 <img src={album.images[1].url} alt="" />
@@ -97,7 +97,7 @@ function Album() {
               </div>
             )}
 
-            <div className={'album__titles'}>
+            <section className={'album__titles'}>
               <h3>TITRES</h3>
               {!isLoading && album?.tracks?.items.length <= 0 ? (
                 <p>Aucun audio disponible.</p>
@@ -128,13 +128,13 @@ function Album() {
                   </div>
                 </>
               )}
-            </div>
+            </section>
             {preview && <ReactHowler src={preview['previewUrl']} html5={true} playing={isPlaying} />}
 
             <div className={'album__player'}>
               <Player {...preview} />
             </div>
-          </div>
+          </main>
         </div>
       )}
     </>
