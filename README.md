@@ -1,4 +1,4 @@
-# Spotify API
+# Spotify player
 
 ## Getting started
 ### Install dependencies
